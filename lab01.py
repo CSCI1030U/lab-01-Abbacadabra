@@ -1,6 +1,6 @@
 def main():
     cost_per_item = 19.99
-    quantity = 5 
+    quantity = 5
 
     # YOUR CODE FOR PART 1 GOES HERE  
     subtotal_cost = cost_per_item*quantity
@@ -8,11 +8,11 @@ def main():
     total_cost = subtotal_cost+tax
 
     # YOUR CODE FOR PART 2 GOES HERE
-    print(f'cost_per_item = ${cost_per_item:0.2f}\nquantity = {quantity}\nsubtotal_cost = ${subtotal_cost:0.2f}\ntax = ${tax:0.2f}\ntotal_cost = ${total_cost:0.2f}') # a sample for you to use for the other prices
-    # print(f'quantity = {quantity}')
-    # print(f'subtotal_cost = ${subtotal_cost:0.2f}')
-    # print(f'tax = ${tax:0.2f}')
-    # print(f'total_cost = ${total_cost:0.2f}')
+    print(f'cost_per_item = ${cost_per_item:0.2f}', flush=True) #\nquantity = {quantity}\nsubtotal_cost = ${subtotal_cost:0.2f}\ntax = ${tax:0.2f}\ntotal_cost = ${total_cost:0.2f}') # a sample for you to use for the other prices
+    print(f'quantity = {quantity}', flush=True)
+    print(f'subtotal_cost = ${subtotal_cost:0.2f}')
+    print(f'tax = ${tax:0.2f}')
+    print(f'total_cost = ${total_cost:0.2f}')
 
 
     # THIS IS THE CODE FOR PART 3
@@ -24,7 +24,7 @@ def main():
     investment += investment * interest_rate
     investment += investment * interest_rate
     investment += investment * interest_rate
-    print('After 5 years, your investment will be worth ' + str(investment) + ' dollars.')
+    print(f'After 5 years, your investment will be worth ' + str(investment) + ' dollars.')
     # expected output: After 5 years, your investment will be worth 1187.6863056468749 dollars.
     #runtime error, line 27. need to add "str()" to investments. concatenate string with a float before converting
 
